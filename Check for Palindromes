@@ -1,0 +1,21 @@
+function palindrome(str) {
+  // Good luck!
+  var space = /\,|\.|\s|\_|\(|\:|\/|\\|\)|\-/g;
+  var symbol = /[!-\/:-@\[-`{-~]|\s/g;
+  var arr1 = [];
+  var arr2 = [];
+  var str2 = "";
+  var str1 = str.replace(symbol,"");
+  arr1 = str1.split("");
+  arr1.reverse();
+  str2 = arr1.join("");
+  if(str1.toLowerCase()==str2.toLowerCase()){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+
+
+palindrome("rac    e.c,ar");
