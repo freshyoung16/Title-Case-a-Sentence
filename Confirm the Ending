@@ -1,0 +1,14 @@
+function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+  var newStr="";
+  var newLength = target.length;
+  newStr = str.substr(-newLength,newLength);
+  if(newStr == target){
+    return true;
+  }else {
+    return false;
+  }
+}
+
+confirmEnding("He has to give me a new name", "name");
